@@ -53,6 +53,8 @@
         android:layout_gravity="center"
         android:textSize="20sp"
         android:textColor="@color/white"
+        android:background="@drawable/bg_boton_entradas"
+        app:backgroundTint="@null"
         />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

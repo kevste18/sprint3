@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Sprint3</string>
+    <string name="poster">Poster de la Velada</string>
+    <string name="velada">LA VELADA DEL AÑO</string>
+    <string name="ubicacion">25 de Julio · Sevilla</string>
+    <string name="entradas">Comprar entradas</string>
 </resources>

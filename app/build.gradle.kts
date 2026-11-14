@@ -1,3 +1,5 @@
+import org.gradle.internal.serialize.graph.codecs.Binding
+
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -25,6 +27,11 @@ android {
             }
         }
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11

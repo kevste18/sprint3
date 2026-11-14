@@ -4,4 +4,5 @@
     <string name="velada">LA VELADA DEL AÑO</string>
     <string name="ubicacion">25 de Julio · Sevilla</string>
     <string name="entradas">Comprar entradas</string>
+    <string name="comprar">"¡Entradas compradas con exito!"</string>
 </resources>

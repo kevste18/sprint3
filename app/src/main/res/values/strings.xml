@@ -9,4 +9,13 @@
     <string name="descripcion">Breve descripcion sobre la card.</string>
     <string name="titulo">Encabezado o Titulo</string>
     <string name="imagen">Imagen</string>
+    <string name="velada2">La velada del año</string>
+    <string name="evento">Velada 2027</string>
+    <string name="combates">Combates</string>
+    <string name="primer_combate">Primer Combate</string>
+    <string name="peleadores">Fernanfloo vs Willyrex</string>
+    <string name="descripcion_pelea">Pelea estimada para las 22:00 hora española</string>
+    <string name="logo_velada">Logo Velada</string>
+    <string name="fernan">Imagen Fernanfloo</string>
+    <string name="cartelera">Ver Cartelera</string>
 </resources>

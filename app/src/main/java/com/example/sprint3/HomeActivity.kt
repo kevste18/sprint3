@@ -1,5 +1,6 @@
 package com.example.sprint3
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -20,9 +21,9 @@ import com.example.sprint3.databinding.ActivityHomeBinding
  * - He usado un LinearLayout vertical porque la pantalla es una sola columna y no hace falta anidar layouts.
  * - Texto blanco sobre fondo negro para que haya buen contraste y se lea bien.
  * - Jerarquía visual: el título es grande y en negrita, y el subtítulo más pequeño, para que se vea qué es lo importante.
- * - El botón está abajo del todo (con un Space con weight) para separar la acción principal y que quede a mano del pulgar.
- * - El botón tiene un shape propio (esquinas redondeadas y borde blanco) para personalizarlo y que destaque sobre el fondo.
+ * - Los botones tienen un shape propio (esquinas redondeadas y borde blanco) para personalizarlos y que destaquen sobre el fondo.
  * - Al pulsar el botón sale un Toast que avisa de que la función aún no está implementada, para que el usuario tenga feedback.
+ * - He usado layout_marginEnd en vez de marginRight para que la separación se mantenga en idiomas que se leen de derecha a izquierda
  */
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,9 +39,12 @@ class HomeActivity : AppCompatActivity() {
             insets
         }
 
-
         binding.btnComprar.setOnClickListener {
             Toast.makeText(this, getString(R.string.comprar), Toast.LENGTH_SHORT).show()
+        }
+
+        binding.btnVerCartelera.setOnClickListener {
+            startActivity(Intent(this, DetailActivity::class.java))
         }
     }
 }
